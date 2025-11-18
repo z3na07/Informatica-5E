@@ -16,3 +16,15 @@ SELECT SupplierID, count(SupplierID) FROM Products group by SupplierID;
 Es4
 //Questo esercizio permette di trovare il prezzo massimo dei prodotti forniti da un solo fornitore
 SELECT SupplierID, max(Price) as costoMax FROM Products group by SupplierID;
+
+//COMANDO ORDER BY
+questo comando eprmette di ordinare in due modi, ASC: Ascendente, DSC: discendente.
+Nel campo delle lettere con gli stessi comandi diventa ordine alfabetico e inverso.
+
+Es bastardo
+//Eserczio che richiedeva di ordianre i prodotti per numero decrescente degli ordini
+SELECT productid, quantity FROM OrderDetails order by quantity DESC;
+
+
+
+
