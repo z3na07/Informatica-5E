@@ -1,0 +1,18 @@
+//ESERCITAZIOEN QUERY
+
+Es1
+//Permette di selezioanre tutti gli utenti della tabella che vengono da berlino
+SELECT 	CustomerName FROM Customers where city = "Berlin";
+
+Es2
+//Permette di calcolare la media del prezzo dei prodotti nella tabella
+SELECT AVG(Price) FROM Products;
+
+Es3
+//Questo esercizio conta la quantità di prodotti venduti da un certo produttore, con il suo id.
+//AGGIORNAMENTO: con il comando AS si può rinominare delle tabelle temporanee, per esempio in questo si rinomina la tabella dei prodotti
+SELECT SupplierID, count(SupplierID) FROM Products group by SupplierID;
+
+Es4
+//Questo esercizio permette di trovare il prezzo massimo dei prodotti forniti da un solo fornitore
+SELECT SupplierID, max(Price) as costoMax FROM Products group by SupplierID;
